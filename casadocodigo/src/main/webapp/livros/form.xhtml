@@ -9,20 +9,21 @@
 <h:form>
 	<div>
 		<h:outputLabel value="Título" />
-		<h:inputText value="#{AdminLivrosBean.livro.titulo}"/>
+		<h:inputText value="#{adminLivrosBean.livro.titulo}" />
 	</div>
 	<div>
 		<h:outputLabel value="Descrição" />
-		<h:inputTextarea value="#{AdminLivrosBean.livro.descricao}" rows="4" cols="20" />
+		<h:inputTextarea value="#{adminLivrosBean.livro.descricao}" rows="4"
+			cols="20" />
 	</div>
 	<div>
 		<h:outputLabel value="Número de páginas" />
-		<h:inputText value="#{AdminLivrosBean.livro.numeroPaginas}" />
+		<h:inputText value="#{adminLivrosBean.livro.numeroPaginas}" />
 	</div>
 	<div>
 		<h:outputLabel value="Preço" />
-		<h:inputText value="#{AdminLivrosBean.livro.paginas}" />
+		<h:inputText value="#{adminLivrosBean.livro.preco}" />
 	</div>
-	<h:commandButton value="Cadastrar" />
+	<h:commandButton value="Cadastrar" action="#{adminLivrosBean.salvar}" />
 </h:form>
 </html>
